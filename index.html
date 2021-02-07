@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<h1>Enter Your Grade</h1>
+<input type="text" id="getGrade" />
+<button onclick="check()">Show Me</button>
+<h3>Your Performance : <span id="show"></span></h3>
+
+<body>
+
+</body>
+<script>
+    function check() {
+        let user = document.getElementById("getGrade").value;
+        user = user.toUpperCase();
+        switch (user) {
+            case "A":
+                document.getElementById("show").innerText = "Welldone";
+                break;
+            case "B":
+                document.getElementById("show").innerText = "Good";
+                break;
+            case "C":
+                document.getElementById("show").innerText = "Fair";
+                break;
+            case "D":
+                document.getElementById("show").innerText = "More Effort";
+                break;
+            default:
+                document.getElementById("show").innerText = "Need Hardwork";
+                break;
+        }
+    }
+</script>
+
+</html>
